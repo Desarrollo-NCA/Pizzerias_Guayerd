@@ -58,7 +58,7 @@ main .container p{
 footer{
 	background: black;
 	width: 100%;
-	padding: 10px 0;
+	padding: 4px 0;
 	bottom: 0;
 	position: relative;
 }
@@ -66,6 +66,18 @@ footer{
 footer p{
 	color: white;
 	font-weight: bold;
+}
+
+.copy{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copy a{
+	margin: 0 22px;
+	font-size: 20px;
+	color: white;
 }
 
 /*--------------------------- PIZZERIAS.HTML ----------------------*/
