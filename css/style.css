@@ -91,7 +91,7 @@ main .principal{
 	top: 215px;
 	margin: 0 20px;
 	color: white;
-	transition: 1s all ease;
+	transition: .5s all ease;
 }
 
 .container-30 .publi:hover{
@@ -114,7 +114,7 @@ main .principal{
 	top: 340px;
 	margin: 0 20px;
 	color: white;
-	transition: 1s all ease;
+	transition: .5s all ease;
 }
 
 .container-30 .nico:hover{
@@ -296,9 +296,9 @@ textarea{
 	width: 80%;
 	background: white;
 	border-radius: 20px;
-	box-shadow: 1px 1px 1px 1px;
+	box-shadow: 6px 4px 16px 5px;
 	padding: 20px 0;
-	height: 600px;
+	height: 710px;
 }
 
 form{
@@ -313,6 +313,12 @@ form{
 
 form .formulario-grupo{
 	width: 100%;
+	margin: 15px 0;
+}
+
+form .formulario-grupo.label{
+	display: flex;
+	align-items: center;
 }
 
 form .formulario-grupo label{
@@ -322,6 +328,12 @@ form .formulario-grupo label{
 
 form .formulario-grupo input{
 	padding: 10px 0;
+	width: 70%;
+}
+
+form .formulario-grupo textarea{
+	width: 80%;
+
 }
  
 
