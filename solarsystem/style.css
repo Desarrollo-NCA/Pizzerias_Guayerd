@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: roboto;
+}
+
+header img{
+	width: 100%;
+	height: 20vh;
+}
+
+header nav{
+	background: black;
+	padding: 3px 0;
+	margin: auto;
+	text-align: center;
+	padding: 5px 0;
+}
+
+header nav a{
+	padding: 0 30px;
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+	background: black;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+header nav a:hover{
+	padding: 0 30px;
+	text-decoration: none;
+	color: white;
+	font-weight: bolder;
+	background: ;
+	border-radius: 5px;
+	border: 2px solid white;
+
+}
+
+.banner{
+	background: black;
+}
+
+main{
+	display: flex;
+}
+
+.container-30{
+	padding-top: 40px;
+	width: 30%;
+	text-align: center;
+	font-size: 14px;
+	background: #F8F9F9
+}
+
+.container-30 .imagen{
+	width: 100%;
+}
+
+.container-30 .imagen img{
+	width: 70%;
+	margin: auto;
+}
+
+.container-30 .noticia{
+	margin: 20px 0;
+}
+
+.container-30 a h3{
+	padding: 10px 0;
+	color: #2980b9;
+}
+
+.container-30 a{
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.container-70{
+	width: 70%;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.container-70 p{
+	margin: 30px 40px;
+	text-align: left;
+}
+
+.container-70 h2{
+	padding: 20px 0;
+}
+
+.container-70 ul{
+	text-align: left;
+	margin: 5px 50px;
+}
+
+.container-70 a{
+	color: #2980b9;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+footer{
+	background: black;
+	width: 100%;
+	padding: 4px 0;
+	bottom: 0;
+	position: relative;
+}
+
+footer p{
+	color: white;
+	font-weight: bold;
+}
+
+.copy{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.copy a{
+	margin-left: 10px;
+	font-size: 20px;
+	color: white;
+}

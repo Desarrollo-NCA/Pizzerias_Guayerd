@@ -9,6 +9,7 @@ body{
 	margin: auto;
 	min-height: 600px;
 	text-align: center;
+	background: #bdc3c7;
 }
 
 header{
@@ -51,17 +52,106 @@ main{
 	width: 100%;
 }
 
-main .container h1{
+main .principal{
+	display: flex;
+	margin: auto;
+}
+
+.container-70{
+	width: 70%;
+}
+
+.container-30{
+	width: 30%;
+	background: #C7C8C4;
+	filter: grayscale(1);
+}
+
+.container-30:hover{
+	width: 30%;
+	background: #F9C743;
+	filter: grayscale(0);
+}
+
+.container-30 h3{
+	color: #A6341B;
+	padding: 10px 0;
+}
+
+.container-30 a{
+	text-decoration: none;
+}
+
+.container-30 .publi{
+	opacity: 0;
+	position: absolute;
+	z-index: 10;
+	font-size: 40px;
+	font-weight: 700;
+	top: 215px;
+	margin: 0 20px;
+	color: white;
+	transition: 1s all ease;
+}
+
+.container-30 .publi:hover{
+	opacity: 1;
+	position: absolute;
+	z-index: 10;
+	font-size: 40px;
+	font-weight: 700;
+	top: 190px;
+	margin: 0 20px;
+	color: white;
+}
+
+.container-30 .nico{
+	opacity: 0;
+	position: absolute;
+	z-index: 11;
+	font-size: 40px;
+	font-weight: 700;
+	top: 340px;
+	margin: 0 20px;
+	color: white;
+	transition: 1s all ease;
+}
+
+.container-30 .nico:hover{
+	opacity: 1;
+	position: absolute;
+	z-index: 11;
+	font-size: 40px;
+	font-weight: 700;
+	top: 355px;
+	margin: 0 20px;
+	color: white;
+}
+
+.container-30 p{
+	font-size: 16px;
+	padding: 5px 0;
+	color: #60371E;
+}
+
+.container-30 img{
+	width: 80%;
+	border-radius: 130px;
+	padding: 20px 0;
+}
+
+
+main .container-70 h1{
 	color: #e15f41;
 	font-size: 35px;
 }
 
-main .container h2{
+main .container-70 h2{
 	color: black;
 	
 }
 
-main .container p{
+main .container-70 p{
 	margin: 50px 120px;
 	text-align: left;
 }
@@ -74,6 +164,7 @@ main .container p{
 
 footer{
 	background: black;
+	opacity: .4;
 	width: 100%;
 	padding: 4px 0;
 	bottom: 0;
@@ -197,4 +288,40 @@ textarea{
 	border-bottom-style: groove;
 	outline: none;
 }
+
+/*------------------------AGREGAR--------------------------------*/
+
+.formulario-agregar{
+	margin: 40px auto;
+	width: 80%;
+	background: white;
+	border-radius: 20px;
+	box-shadow: 1px 1px 1px 1px;
+	padding: 20px 0;
+	height: 600px;
+}
+
+form{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+}
+
+.boton-agregar{
+	grid-column: span 2;
+}
+
+form .formulario-grupo{
+	width: 100%;
+}
+
+form .formulario-grupo label{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+form .formulario-grupo input{
+	padding: 10px 0;
+}
+ 
 
