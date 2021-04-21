@@ -12,6 +12,10 @@ body{
 	background: #bdc3c7;
 }
 
+body.body-contacto{
+	background: white;
+}
+
 header{
 	background: #A6341B;
 	width: 100%;
