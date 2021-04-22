@@ -9,16 +9,18 @@ body{
 	margin: auto;
 	min-height: 600px;
 	text-align: center;
-	background: #bdc3c7;
+	background: rgb(189,195,199);
+ 	background: linear-gradient(0deg, rgba(189,195,199,1) 0%, rgba(23,56,78,1) 100%); 
 }
 
-body.body-contacto{
+body.body-contaacto{
 	background: white;
 }
 
 header{
 	background: #A6341B;
 	width: 100%;
+	border-bottom: 2px solid grey;
 }
 
 header .banner{
@@ -39,9 +41,11 @@ header nav a{
 	font-size: 20px;
 	font-weight: bold;
 	padding: 10px;
+	transition: transform .3s;
 }
 
 header nav a:hover{
+	transform: scale(1.05);
 	text-decoration: none;
 	color: black;
 	border-radius: 10px;
@@ -52,8 +56,12 @@ header nav a:hover{
 }
 
 main{
-	margin: auto;
+	margin: 50px auto;
 	width: 100%;
+}
+
+main.pizzerias{
+	margin: auto;
 }
 
 main .principal{
@@ -62,18 +70,29 @@ main .principal{
 }
 
 .container-70{
-	width: 70%;
+	width: 65%;
 }
 
 .container-30{
+	margin: 10px;
 	width: 30%;
-	background: #C7C8C4;
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 8.5px );
+	-webkit-backdrop-filter: blur( 8.5px );
+	border-radius: 30px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	filter: grayscale(1);
 }
 
 .container-30:hover{
 	width: 30%;
-	background: #F9C743;
+	background: rgba( 255, 255, 255, 0.25 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 8.5px );
+	-webkit-backdrop-filter: blur( 8.5px );
+	border-radius: 30px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
 	filter: grayscale(0);
 }
 
@@ -84,6 +103,14 @@ main .principal{
 
 .container-30 a{
 	text-decoration: none;
+}
+
+.container-30 .image{
+	transition: transform .2s;
+}
+
+.container-30 .image:hover{
+	transform: scale(1.03);
 }
 
 .container-30 .publi{
@@ -163,7 +190,8 @@ main .container-70 p{
 .nav{
 	
 	padding: 2px 0;
-	background: #60371E;
+	background: rgb(232,133,73);
+	background: linear-gradient(0deg, rgba(232,133,73,1) 0%, rgba(96,55,30,1) 100%);
 }
 
 footer{
@@ -187,9 +215,17 @@ footer p{
 }
 
 .copy a{
+	transition: transform .2s;
 	margin-left: 10px;
 	font-size: 20px;
 	color: white;
+}
+
+.copy a:hover{
+	transform: scale(1.3);
+	margin-left: 10px;
+	font-size: 20px;
+	color: #3498db;
 }
 
 /*--------------------------- PIZZERIAS.HTML ----------------------*/
@@ -210,7 +246,13 @@ main .container .info-pizz{
 	color: #34495e;
 }
 
+.redes li a:hover{
+	padding: 0 10px 10px 10px;
+	color: #3498db;
+}
+
 .info-pizz img{
+	border-radius: 5px;
 	width: 70%;
 }
 
@@ -229,7 +271,17 @@ main .container .info-pizz{
 }
 
 .parrafo-info{
+	text-align: left;
+	margin-top: 40px;
 	width: 65%;
+}
+
+.parrafo-info p{
+	line-height: 25px;
+}
+
+.parrafo-info p b{
+	line-height: 50px;
 }
 
 /*----------------------CONTACTO----------------------*/
@@ -242,10 +294,21 @@ main .container .info-pizz{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    background: rgba( 255, 255, 255, 0.35 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 20.0px );
+	-webkit-backdrop-filter: blur( 20.0px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	padding: 20px;
 }
 
 .formulario input{
 	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
 }
 
 .boton{
@@ -283,6 +346,7 @@ main .container .info-pizz{
 textarea{
 	width: 100%;
 	height: 200px;
+	border-radius: 5px;
 }
 
 .input-style{
@@ -298,9 +362,15 @@ textarea{
 .formulario-agregar{
 	margin: 40px auto;
 	width: 80%;
-	background: white;
-	border-radius: 20px;
-	box-shadow: 6px 4px 16px 5px;
+	
+	background: rgba( 255, 255, 255, 0.35 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 20.0px );
+	-webkit-backdrop-filter: blur( 20.0px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+	
 	padding: 20px 0;
 	height: 710px;
 }

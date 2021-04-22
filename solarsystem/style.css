@@ -6,6 +6,12 @@
 
 body{
 	font-family: roboto;
+	background-image: url(http://wallpapers4screen.com/Uploads/22-1-2016/9127/space-solar-system-planet.jpg);
+	background-size: cover;
+}
+
+header{
+	margin: 20px auto;
 }
 
 header img{
@@ -14,32 +20,31 @@ header img{
 }
 
 header nav{
-	background: black;
+	background: transparent;
 	padding: 3px 0;
-	margin: auto;
-	text-align: center;
 	padding: 5px 0;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 120px;
+
 }
 
 header nav a{
+	margin: 0 10px;
+	font-size: 30px;
 	padding: 0 30px;
 	text-decoration: none;
-	color: white;
-	font-weight: bolder;
-	background: black;
+	color:	white;
+	font-weight: 900;
 	border-radius: 5px;
-	border: 2px solid black;
+	border: 2px solid transparent;
+	transition: transform .2s;
+	text-shadow: 1px 1px 5px black;
 }
 
 header nav a:hover{
-	padding: 0 30px;
-	text-decoration: none;
-	color: white;
-	font-weight: bolder;
-	background: ;
-	border-radius: 5px;
-	border: 2px solid white;
-
+	color: #1dd1a1;
+	transform: scale(1.1);
 }
 
 .banner{
@@ -48,6 +53,9 @@ header nav a:hover{
 
 main{
 	display: flex;
+	width: 95%;
+	margin: 10px auto;
+	padding: 20px 0;
 }
 
 .container-30{
@@ -55,16 +63,37 @@ main{
 	width: 30%;
 	text-align: center;
 	font-size: 14px;
-	background: #F8F9F9
+	background: rgba( 255, 255, 255, 0.10 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 15.5px );
+	-webkit-backdrop-filter: blur( 15.5px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.noticia{
+	transition: transform .2s;
+}
+
+.noticia:hover a h3{
+	transform: scale(1.1);
+	color: white;
+	text-shadow: 1px 1px 5px black;
+}
+
+.noticia:hover .imagen{
+	transform: scale(1.05);
 }
 
 .container-30 .imagen{
 	width: 100%;
+	transition: transform .2s;
 }
 
 .container-30 .imagen img{
 	width: 70%;
 	margin: auto;
+	border-radius: 10px;
 }
 
 .container-30 .noticia{
@@ -72,19 +101,95 @@ main{
 }
 
 .container-30 a h3{
+	margin: auto 10px;
 	padding: 10px 0;
 	color: #2980b9;
+	transition: transform .2s;
 }
 
 .container-30 a{
 	text-decoration: none;
 	font-weight: bold;
+	transition: transform .2s;
+}
+
+.container-30 .perfil{
+	width: 100%;
+	display: flex;
+	height: 68vh;
+}
+
+.container-30 .fotoperfil{
+	width: 100%
+}
+
+.container-30 .tarjeta{
+	
+	width: 90%;
+	margin: auto;
+	padding: 30px 0;
+	background: rgba( 0, 0, 0, 0.45 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	-webkit-backdrop-filter: blur( 10.0px );
+	backdrop-filter: blur(10px);
+	border-radius: 30px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+	position: relative;
+	top: 50px;
+	height: 80%;
+	transition: .3s all ease;
+	overflow: hidden;
+}
+
+.container-30 .tarjeta:hover{
+	transform: scale(1.04);
+	height: 100%;
+}
+
+.container-30 .tarjeta .acercade{
+	transition: .3s all ease;
+	opacity: 0;
+}
+
+.container-30 .tarjeta:hover .acercade{
+	opacity: 1;
+}
+
+.container-30 .tarjeta img{
+	width: 70%;
+	border-radius: 30px;
+}
+
+.container-30 .tarjeta h4{
+	color: white;
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+.container-30 .tarjeta h4 span{
+	font-size: 16px;
 }
 
 .container-70{
+	margin: 0 20px;
 	width: 70%;
 	text-align: center;
 	padding-top: 30px;
+
+	background: rgba( 255, 255, 255, 0.10 );
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+	backdrop-filter: blur( 15.5px );
+	-webkit-backdrop-filter: blur( 15.5px );
+	border-radius: 10px;
+	border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.container-70 h1{
+	text-transform: uppercase;
+}
+
+.container-70 img{
+	border-radius: 10px;
 }
 
 .container-70 p{
@@ -109,6 +214,7 @@ main{
 
 footer{
 	background: black;
+	opacity: .8;
 	width: 100%;
 	padding: 4px 0;
 	bottom: 0;
@@ -127,7 +233,15 @@ footer p{
 }
 
 .copy a{
+	transition: transform .2s;
 	margin-left: 10px;
 	font-size: 20px;
 	color: white;
+}
+
+.copy a:hover{
+	transform: scale(1.3);
+	margin-left: 10px;
+	font-size: 20px;
+	color: #3498db;
 }
