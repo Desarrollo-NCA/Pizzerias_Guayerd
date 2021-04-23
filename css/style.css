@@ -40,8 +40,9 @@ header nav a{
 	border-radius: 10px;
 	font-size: 20px;
 	font-weight: bold;
+	border: 2px solid transparent;
 	padding: 10px;
-	transition: transform .3s;
+	transition: all ease .4s;
 }
 
 header nav a:hover{
@@ -49,7 +50,18 @@ header nav a:hover{
 	text-decoration: none;
 	color: black;
 	border-radius: 10px;
-	background: #D1BF91;
+	border: 2px solid black;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+header nav a.use{
+	transform: scale(1.05);
+	text-decoration: none;
+	color: black;
+	border-radius: 10px;
+	border: 2px solid black;
 	font-size: 20px;
 	font-weight: bold;
 	padding: 10px;
@@ -190,8 +202,7 @@ main .container-70 p{
 .nav{
 	
 	padding: 2px 0;
-	background: rgb(232,133,73);
-	background: linear-gradient(0deg, rgba(232,133,73,1) 0%, rgba(96,55,30,1) 100%);
+	background: #A6341B;
 }
 
 footer{
